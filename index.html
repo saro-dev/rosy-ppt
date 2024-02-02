@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandhya Presentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" >
+  <section id="intro" class="section">
+    <div class="content">
+      <h2>Exploring the Intersection of <span>Smart Devices</span> and the Internet of Things</h2>
+      <h3>&dash;By Sandhya.S</h3>
+    </div>
+  </section>
+  <section id="one" class="section">
+    <div class="content" id="content">
+        <h2>Exploring the Smart Devices <br> <span style="font-size: 30px; color: orangered;">(Smartphones, Laptops, Smart TV's)</span></h2>
+        <img src="./assets/smart.gif" alt="">
+      </div>
+  </section>
+  <section id="phone1" class="section" style="display: flex;flex-direction: column;">
+    <div class="content" id="phone">
+      <img src="./assets/phone.gif" alt="" height="650px">
+      <img src="./assets/tab.gif" alt="" height="650px">
+      </div>
+      <div style="margin-top: 20px;">
+
+      <h2>Smartphones and Tablets</h2>
+      </div>
+  </section>
+  <section class="section back">
+    <div class="content">
+      <img src="./assets/best-smartphone-technology-graphic-art-etc1qtpdyrjozrwk.gif" style="height: 350px; border-radius: 10px;" alt="" />
+      <h2>Smartphone Capabilities</h2>
+    </div>
+  </section>
+  <section id="phone1" class="section" style="display: flex;flex-direction: column;">
+    <div class="content" id="phone">
+      <img src="./assets/faceid_gif.gif" alt="" height="650px">
+      <img src="./assets/fingerprint.gif" alt="" height="650px">
+      <img src="./assets/ios-16-iphone-13-pro-control-center-adjust-brightness-animation.gif" alt="" height="650px" style="background-color: white;">
+      <img src="./assets/malicious-apps-anubis-banking-trojan-motion-detection-1.gif" alt="" height="650px" style="background-color: white;">
+      </div>
+      <div style="margin-top: 20px;">
+
+      <h2>Smartphones Censors <span style="font-size: 25px;">(GPS, light conditions etc)</span></h2>
+      </div>
+  </section>
+  <section id="phone2" class="section" style="display: flex;flex-direction: column;">
+    <div class="content" id="phone">
+      <img src="./assets/3_remis_a_neuf_dribbble.gif" alt="" height="650px">
+      <img src="./assets/compo.gif" alt="" height="650px">
+      </div>
+      <div style="margin-top: 20px;">
+
+      <h2>IoT Components in Smartphones</h2>
+      </div>
+  </section>
+  <section id="two" class="section">
+    <div class="content" id="">
+        <img src="./assets/smart-tv-concept-part1.gif" alt="">
+    </div>    
+  </section>
+  <section id="technologies" class="section" style="background-color: rgb(69, 42, 0);">
+    <div class="content">
+      <h2>Features and applications of Smart TVs in the IoT ecosystem</h2>
+      <ul style="list-style-type:lower-roman; text-align: left; margin-top: 15px;">
+        <li>Video calling capabilities</li>
+        <li>Content streaming and personalized recommendations</li>
+        <li>Potential as control platforms for IoT devices</li>
+      </ul>
+    </div>
+  </section>
+  <section id="two" class="section">
+    <div class="content" id="">
+        <img src="./assets/alexa-vol.gif" alt="">
+    </div>    
+  </section>
+  <section id="tv" class="section">
+    <div class="content" id="">
+        <h2>Future Perspectives</h2>
+    </div>    
+  </section>
+  <section id="technologies" class="section" style="background-color: rgb(69, 42, 0);">
+    <div class="content">
+      <h2>Speculative insights into the future of IoT and smart devices</h2>
+      <ul style="list-style-type:lower-roman; text-align: left; margin-top: 15px;">
+        <li>Enhanced data storage and processing capabilities in Smart TVs</li>
+        <li>Integration of Smart TVs with home security and environmental control systems</li>
+        <li>Potential for voice-activated interfaces and personalized recommendations</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="last" class="section">
+    <div class="content" id="">
+        <img src="./assets/image_1705571633847.jpg" alt="" height="400px">
+        <h2>Thank You! 🌺💕</h2>
+    </div>    
+  </section>
+  <!-- Add more sections for each slide -->
+  
+
+  <script src="script.js"></script>
+  <script>
+    var content = document.getElementById('body');
+
+// Prevent default scrolling behavior when using the mouse wheel
+content.addEventListener('wheel', function(e) {
+    e.preventDefault();
+});
+content.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        });
+
+    // Function to handle key press events
+    function handleKeyPress(event) {
+      if (event.key === "ArrowDown") {
+        // Scroll down by 100vh
+        window.scrollBy({
+          top: window.innerHeight -57,
+          behavior: 'smooth'
+        });
+      } else if (event.key === "ArrowUp") {
+        // Scroll up by 100vh
+        window.scrollBy({
+          top: -window.innerHeight +57 ,
+          behavior: 'smooth'
+        });
+      }
+    }
+  
+    // Add event listener to the document to capture key press events
+    document.addEventListener("keydown", handleKeyPress);
+  </script>
+  <script>
+   function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to handle scroll event
+  function handleScroll() {
+    var thankyouSection = document.getElementById('thankyou');
+    if (isInViewport(thankyouSection)) {
+      var video = thankyouSection.querySelector('video');
+      video.play();
+    }
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);
+</script>
+  
+</body>
+</html>

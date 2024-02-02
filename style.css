@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "venite"; /* Specify the font family name */
+  src: url("./assets/VeniteAdoremus-rgRBA.ttf") format("truetype"); /* Specify the path to your TTF font file */
+}
+
+@font-face {
+  font-family: "blend"; /* Specify the font family name */
+  src: url("./assets/Blending-rgjzK.otf") format("opentype"); /* Specify the path to your TTF font file */
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+#intro {
+  background: url(./assets/64387c56904167.59c11c162bc8d.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#intro span {
+  color: aqua;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#intro h2 {
+  color: white;
+  font-size: 65px;
+  filter: drop-shadow(2px 3px black);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 5px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+#intro h3 {
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+  color: rgb(255, 138, 158);
+  font-size: 30px;
+  font-family: "blend", sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 5px;
+}
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+}
+#one {
+  background: url(./assets/back.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+#content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#content h2 {
+  color: white;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+#content p {
+  font-size: 25px;
+}
+#two {
+  background: radial-gradient(blue, aqua);
+}
+#two img {
+  height: 90vh;
+  width: auto;
+  border-radius: 10px;
+}
+#phone{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+#phone img{
+  height: 300px;
+  width: auto;
+}
+#phone1{
+  background: url(./assets/reinvently_insights_3.0.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+#phone2{
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+#tv{
+  background: url(./assets/future.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+#last{
+  background: url(./assets/detailed-hand-painted-pink-watercolour-background_1048-17039.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+p {
+  font-family: "blend", sans-serif;
+  color: white;
+}
+h2 {
+  font-family: "venite", sans-serif;
+  color: white;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+#technologies {
+  background: url(./assets/twoback.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+#technologies h2 {
+  color: white;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+#technologies ul {
+  color: white;
+  font-size: 30px;
+}
+#technologies li {
+  font-family: "blend", sans-serif;
+}
+.back {
+  background: radial-gradient(rgb(50, 152, 235), rgb(0, 87, 92));
+}
+#wifi {
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#applications {
+  background: url(./assets/image_processing20200120-31240-k3send.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#applications ul {
+  color: white;
+  font-size: 28px;
+  font-family: "blend", sans-serif;
+}
+.front {
+  background: radial-gradient(black, grey);
+}
+#future {
+  background: url(./assets/future.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#fiveg {
+    background: url(./assets/dt-2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+#thankyou video{
+    width: 95%;
+    height: auto;
+}
